@@ -1,13 +1,14 @@
 # Work history (most recent first)
 roles:
-- role: Senior Ruby on Rails Engineer
+- role: Staff Engineer
   org: OutX
   when: Jan 2026 – Jun 2026
   where: Remote · Contract
   logo: outx.png
   body: >-
-    Contract backend engineering in Ruby on Rails for OutX, an AI-powered LinkedIn
-    social-listening and sales-intelligence platform.
+    OutX is a subscription LinkedIn tracking and automation platform: users follow keywords
+    to surface relevant posts and automate their LinkedIn workflows. Built the backend on
+    Supabase and the React + JavaScript Chrome extension that powers the in-LinkedIn experience.
 
 - role: Technical Architect
   org: Qodex.ai
