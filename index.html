@@ -22,7 +22,7 @@ layout: default
     </div>
     <div class="hero-portrait">
       <img src="{{ '/assets/img/amit.jpg' | relative_url }}" alt="Amit Chaudhary" width="300" height="300" />
-      {% include toptal-badge.html %}
+      {% if site.show_toptal_badge %}{% include toptal-badge.html %}{% endif %}
     </div>
   </div>
 </section>

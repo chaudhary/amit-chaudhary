@@ -20,6 +20,7 @@ headline_pre:  "I build, scale and "
 headline_em:   "rescue"
 headline_post: " Ruby on Rails apps for US & UK teams."
 availability:  "Open to high-rate contract engagements"
+show_toptal_badge: false   # flip to true to show the Toptal "Top 3%" badge in the hero
 
 # Deployment (project page lives under /amit-chaudhary)
 url:     "https://chaudhary.github.io"
