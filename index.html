@@ -87,7 +87,10 @@ layout: default
     <div class="timeline">
       {% for r in site.data.experience.roles %}
       <div class="role">
-        <div class="when">{{ r.when }}<small>{{ r.where }}</small></div>
+        <div class="role-side">
+          {% if r.logo %}<span class="logo-tile"><img src="{{ '/assets/img/logos/' | append: r.logo | relative_url }}" alt="{{ r.org }} logo" loading="lazy" /></span>{% endif %}
+          <div class="when">{{ r.when }}<small>{{ r.where }}</small></div>
+        </div>
         <div>
           <h3>{{ r.role }}</h3>
           <div class="org">{{ r.org }}</div>
