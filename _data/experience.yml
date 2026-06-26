@@ -28,8 +28,11 @@ roles:
   where: Remote · Contract via Toptal
   logo: buildingintelligence.png
   body: >-
-    Contract Ruby on Rails engineering (via Toptal) for Building Intelligence, a US
-    physical-security SaaS for visitor, vehicle and vendor management.
+    Via Toptal, on Building Intelligence's monolithic physical-security platform for visitor,
+    vehicle and vendor management (Ruby on Rails + MongoDB/Mongoid backend, AngularJS
+    frontend). Led the Ruby and Rails version upgrade plus Mongoid and OpenSearch
+    modernization, refactored the scheduling and delivery feature, and built a data-import
+    system for drivers, vendors, tenants and other entity types.
 
 - role: Lead Software Engineer
   org: W Energy Software (SevenLakes Technologies)
