@@ -49,8 +49,14 @@
 
 <footer>
   <div class="wrap">
-    © {{ 'now' | date: "%Y" }} {{ site.title }} · {{ site.tagline }} ·
-    Built simple, the way it should be.
+    <div class="footer-contact">
+      <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+      <span class="sep">·</span>
+      <a href="tel:{{ site.phone | replace: ' ', '' }}">{{ site.phone }}</a>
+    </div>
+    <div class="footer-copy">
+      © {{ 'now' | date: "%Y" }} {{ site.title }} · {{ site.tagline }}
+    </div>
   </div>
 </footer>
 
