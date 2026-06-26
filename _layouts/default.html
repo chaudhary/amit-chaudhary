@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>{{ site.title }} · {{ site.tagline }}</title>
+<meta name="description" content="{{ site.description }}" />
+<meta name="author" content="{{ site.title }}" />
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="{{ site.title }} · {{ site.tagline }}" />
+<meta property="og:description" content="{{ site.description }}" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
+</head>
+<body>
+
+<div class="accent-rule"><i></i><i></i><i></i><i></i></div>
+
+<header class="topbar">
+  <div class="wrap">
+    <div class="brand">Amit <span>Chaudhary</span></div>
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#services">What I do</a>
+      <a href="#stack">Stack</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+{{ content }}
+
+<footer>
+  <div class="wrap">
+    © {{ 'now' | date: "%Y" }} {{ site.title }} · {{ site.tagline }} ·
+    Built simple, the way it should be.
+  </div>
+</footer>
+
+</body>
+</html>

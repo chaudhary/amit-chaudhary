@@ -1,0 +1,19 @@
+# "What I do" cards. color: t (teal) | o (orange) | r (red) | g (green)
+- color: t
+  title: Legacy Rails upgrades
+  body: "Moving stuck apps across major Rails and Ruby versions safely, through dependency hell, deprecations, and the test failures nobody wants to own."
+- color: o
+  title: Performance & scaling
+  body: "Finding and killing the N+1s, slow queries, and architectural bottlenecks that show up when traffic grows. PostgreSQL and MongoDB tuning included."
+- color: r
+  title: Architecture & technical direction
+  body: "Designing systems that stay simple as they grow. Making the high-stakes calls early so they don't become expensive rewrites later."
+- color: g
+  title: Codebase rescue
+  body: "Stepping into inherited, under-tested, or abandoned codebases and making them reliable, shippable, and maintainable again."
+- color: t
+  title: AI-assisted development
+  body: "Building LLM-backed features the right way (retrieval-grounded, evaluated, shipped), plus helping teams use coding agents without shooting themselves in the foot."
+- color: o
+  title: Fractional senior & mentoring
+  body: "Being the senior voice on a small team. Reviewing, unblocking, mentoring, and raising the bar without the gatekeeping."

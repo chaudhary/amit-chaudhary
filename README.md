@@ -1,23 +1,30 @@
 # amit-chaudhary
 
-Personal site for **Amit Chaudhary** — Senior Ruby on Rails Engineer & Architect, available for independent contract work with US/UK remote teams.
+Personal site for **Amit Chaudhary**, Senior Ruby on Rails Engineer & Architect, available for independent contract work with US/UK remote teams.
 
-Single self-contained `index.html` (no build step), served via GitHub Pages.
+Standard Jekyll site served by GitHub Pages. All content is data-driven: you edit YAML, not HTML.
+
+## Where the content lives
+
+| What | File |
+|------|------|
+| Title, tagline, contact, hero text, baseurl | `_config.yml` |
+| About paragraphs + "at a glance" facts | `_data/profile.yml` |
+| "What I do" service cards | `_data/services.yml` |
+| Tech stack columns | `_data/stack.yml` |
+| Work history + education | `_data/experience.yml` |
+| Résumé download | `resume.pdf` |
+| Page structure / layout | `index.html`, `_layouts/default.html` |
+| Styles | `assets/css/main.css` |
 
 ## Local preview
 
 ```bash
-# any static server works
-python3 -m http.server 8000
-# then open http://localhost:8000
+bundle exec jekyll serve   # or: jekyll serve
+# open http://localhost:4000/amit-chaudhary/
 ```
-
-## Things to fill in
-
-- **Experience** — replace the placeholder role(s) in `index.html` (search for `placeholder`) with your real history and measurable results.
-- **Résumé** — drop your PDF in as `resume.pdf`; the "Résumé (PDF)" button already links to it.
-- **LinkedIn** — replace `REPLACE-LINKEDIN-HANDLE` in the contact section with your real profile URL.
 
 ## Deploy
 
-Pushed to `chaudhary/amit-chaudhary` and published with GitHub Pages from the `main` branch root.
+Pushed to `main` on `chaudhary/amit-chaudhary`; GitHub Pages builds it automatically.
+Live at https://chaudhary.github.io/amit-chaudhary/

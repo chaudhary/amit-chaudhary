@@ -1,0 +1,53 @@
+# Work history (most recent first)
+roles:
+- role: Technical Architect
+  org: Qodex.ai
+  when: May 2024 – Present
+  where: Remote
+  body: >-
+    API automation-testing platform (Ruby on Rails + PostgreSQL + ReactJS). Own backend
+    architecture and RESTful APIs, automated deploys on Docker / ECS / GitHub Actions, and
+    SEO-indexable public pages via AWS Lambda, S3 and CloudFront. Built a system for
+    defining dynamic JavaScript functions from the UI, executed server-side with ExecJS.
+
+- role: Lead Software Engineer
+  org: W Energy Software (SevenLakes Technologies)
+  when: Oct 2022 – Mar 2024
+  where: Remote
+  body: >-
+    Led backend development of a cloud oil-&-gas ERP SaaS in Ruby on Rails with a team of
+    five. Owned core backend functionality, unit testing, and the AWS deployment
+    infrastructure, monitoring service performance day to day.
+
+- role: Senior Backend Engineer
+  org: HealthTap India
+  when: Nov 2018 – Oct 2022
+  where: Gurgaon
+  body: >-
+    Backend for a nationwide US virtual primary-care practice. Built automated GitHub
+    branch backmerge via Actions + REST API, a generic email open/click tracking system,
+    customised delayed_job for multi-threaded jobs, an affiliate model with event tracking,
+    and pipelines for complex enterprise data imports.
+
+- role: Senior Product Engineer
+  org: AlmaConnect Solutions
+  when: Dec 2012 – Oct 2018
+  where: Gurgaon
+  body: >-
+    Built AlmaConnect (alumni networking) and Tradilio (stock-trading social app) on Ruby on
+    Rails, MongoDB, Elasticsearch, AngularJS and React Native. Published the open-source
+    AcDenormalize gem, integrated RazorPay/ATOM payments, did AWS Lambda image processing,
+    and designed real-time chat with Pusher.
+
+- role: Software Engineer
+  org: Navyug Infosolutions
+  when: Oct 2011 – Dec 2012
+  where: Noida
+  body: >-
+    Built Ruby on Rails + SproutCore web apps and implemented business schemes with a Drools
+    rule engine.
+
+education:
+  - degree: B.Tech, Engineering Physics
+    school: Indian Institute of Technology, Guwahati
+    when: 2011 · 7.35 CGPA

@@ -1,0 +1,14 @@
+# About paragraphs and the "at a glance" facts box
+about:
+  - "I've spent 14+ years building and architecting Ruby on Rails products across B2B and B2C, from greenfield builds to high-traffic systems that needed to stop falling over. I'm equally comfortable owning architecture decisions as a Technical Architect and getting my hands dirty in a messy, decade-old codebase."
+  - "I take the work most teams would rather not touch: <strong>version upgrades, performance rescue, scaling pain, and test-suite resurrection</strong>. I step into a codebase, make it boring and reliable again, and leave the team faster than I found them."
+  - "On AI, I have earned opinions on where coding agents genuinely speed you up versus where they quietly add risk, and how to keep a senior engineer in the loop. I've designed retrieval-grounded, agentic LLM systems end to end, not just prompted a chatbot."
+
+facts:
+  - { k: "Experience",  v: "14+ years" }
+  - { k: "Core",        v: "Ruby on Rails" }
+  - { k: "Current",     v: "Technical Architect" }
+  - { k: "Engagement",  v: "Independent contractor" }
+  - { k: "Clients",     v: "US & UK remote teams" }
+  - { k: "Overlap",     v: "US business hours" }
+  - { k: "Education",   v: "B.Tech, IIT Guwahati" }

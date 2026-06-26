@@ -1,219 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Amit Chaudhary — Senior Ruby on Rails Engineer &amp; Architect</title>
-<meta name="description" content="Senior Ruby on Rails engineer and architect with 14+ years of experience. Independent contractor for US and UK remote teams. Legacy Rails upgrades, scaling, performance, and pragmatic AI-assisted development." />
-<meta name="author" content="Amit Chaudhary" />
-
-<!-- Open Graph / social -->
-<meta property="og:type" content="website" />
-<meta property="og:title" content="Amit Chaudhary — Senior Ruby on Rails Engineer &amp; Architect" />
-<meta property="og:description" content="14+ years of Ruby on Rails. Independent contractor for US/UK remote teams. Rails upgrades, scaling, performance, and pragmatic AI-assisted development." />
-
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-
-<style>
-  :root {
-    --navy-900: #0d1626;
-    --navy-800: #111f33;
-    --navy-700: #16263d;
-    --navy-600: #1d3047;
-    --teal:     #17a589;
-    --teal-bright: #1fbf9f;
-    --orange:   #f5a623;
-    --red:      #e8543f;
-    --green:    #27ae60;
-    --text:     #e8eef5;
-    --muted:    #93a3b5;
-    --line:     rgba(255,255,255,0.08);
-    --radius:   14px;
-    --max:      1080px;
-  }
-
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-
-  html { scroll-behavior: smooth; }
-
-  body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    background: var(--navy-900);
-    color: var(--text);
-    line-height: 1.65;
-    -webkit-font-smoothing: antialiased;
-    overflow-x: hidden;
-  }
-
-  a { color: var(--teal-bright); text-decoration: none; }
-  a:hover { text-decoration: underline; }
-
-  .wrap { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
-
-  code, .mono { font-family: 'JetBrains Mono', monospace; }
-
-  /* ---------- top bar ---------- */
-  .topbar {
-    position: sticky; top: 0; z-index: 50;
-    background: rgba(13,22,38,0.82);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid var(--line);
-  }
-  .topbar .wrap { display: flex; align-items: center; justify-content: space-between; height: 62px; }
-  .brand { font-weight: 800; letter-spacing: -0.02em; font-size: 1.05rem; }
-  .brand span { color: var(--teal-bright); }
-  .nav a { color: var(--muted); margin-left: 26px; font-size: 0.92rem; font-weight: 500; }
-  .nav a:hover { color: var(--text); text-decoration: none; }
-  @media (max-width: 680px) { .nav { display: none; } }
-
-  /* ---------- hero ---------- */
-  .hero {
-    position: relative;
-    padding: 96px 0 72px;
-    border-bottom: 1px solid var(--line);
-    background:
-      radial-gradient(900px 420px at 80% -10%, rgba(23,165,137,0.16), transparent 60%),
-      radial-gradient(700px 380px at 0% 10%, rgba(245,166,35,0.08), transparent 55%);
-  }
-  .accent-rule { height: 4px; width: 100%; display: flex; }
-  .accent-rule i { flex: 1; }
-  .accent-rule i:nth-child(1){ background: var(--teal); }
-  .accent-rule i:nth-child(2){ background: var(--orange); }
-  .accent-rule i:nth-child(3){ background: var(--red); }
-  .accent-rule i:nth-child(4){ background: var(--green); }
-
-  .eyebrow {
-    color: var(--teal-bright); font-weight: 600; font-size: 0.82rem;
-    letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 18px;
-  }
-  .hero h1 {
-    font-size: clamp(2.1rem, 5.2vw, 3.5rem);
-    line-height: 1.08; letter-spacing: -0.03em; font-weight: 800;
-    margin-bottom: 20px; max-width: 18ch;
-  }
-  .hero h1 em { color: var(--teal-bright); font-style: normal; }
-  .hero .lede { font-size: clamp(1.05rem, 2.2vw, 1.3rem); color: var(--muted); max-width: 60ch; }
-  .hero .lede strong { color: var(--text); font-weight: 600; }
-
-  .cta-row { margin-top: 34px; display: flex; gap: 14px; flex-wrap: wrap; }
-  .btn {
-    display: inline-block; padding: 13px 24px; border-radius: 10px;
-    font-weight: 600; font-size: 0.96rem; transition: transform .12s ease, background .15s ease;
-  }
-  .btn:hover { text-decoration: none; transform: translateY(-2px); }
-  .btn-primary { background: var(--teal); color: #04241d; }
-  .btn-primary:hover { background: var(--teal-bright); }
-  .btn-ghost { background: transparent; color: var(--text); border: 1px solid var(--line); }
-  .btn-ghost:hover { border-color: var(--teal); color: var(--teal-bright); }
-
-  .availability {
-    margin-top: 30px; display: inline-flex; align-items: center; gap: 10px;
-    font-size: 0.9rem; color: var(--muted);
-  }
-  .dot { width: 9px; height: 9px; border-radius: 50%; background: var(--green); box-shadow: 0 0 0 4px rgba(39,174,96,0.18); }
-
-  /* ---------- sections ---------- */
-  section { padding: 76px 0; border-bottom: 1px solid var(--line); }
-  .section-tag { color: var(--orange); font-weight: 600; font-size: 0.78rem; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 12px; }
-  .section-title { font-size: clamp(1.6rem, 3.4vw, 2.2rem); letter-spacing: -0.02em; font-weight: 800; margin-bottom: 14px; }
-  .section-intro { color: var(--muted); max-width: 64ch; font-size: 1.05rem; margin-bottom: 40px; }
-
-  /* about */
-  .about-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 48px; align-items: start; }
-  @media (max-width: 820px){ .about-grid { grid-template-columns: 1fr; gap: 28px; } }
-  .about p { color: var(--muted); margin-bottom: 16px; font-size: 1.05rem; }
-  .about p strong { color: var(--text); }
-  .facts { background: var(--navy-800); border: 1px solid var(--line); border-radius: var(--radius); padding: 26px; }
-  .facts h3 { font-size: 0.8rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--teal-bright); margin-bottom: 18px; }
-  .facts dl { display: grid; grid-template-columns: auto 1fr; gap: 12px 16px; font-size: 0.95rem; }
-  .facts dt { color: var(--muted); }
-  .facts dd { color: var(--text); font-weight: 500; }
-
-  /* cards grid */
-  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-  @media (max-width: 860px){ .grid { grid-template-columns: 1fr; } }
-  .card {
-    background: var(--navy-800); border: 1px solid var(--line);
-    border-radius: var(--radius); padding: 26px; position: relative; overflow: hidden;
-    transition: transform .14s ease, border-color .14s ease;
-  }
-  .card:hover { transform: translateY(-3px); border-color: rgba(23,165,137,0.4); }
-  .card::before { content:""; position:absolute; left:0; top:0; bottom:0; width:4px; }
-  .card.t::before{ background: var(--teal); } .card.o::before{ background: var(--orange); }
-  .card.r::before{ background: var(--red); }  .card.g::before{ background: var(--green); }
-  .card h3 { font-size: 1.12rem; margin-bottom: 10px; letter-spacing: -0.01em; }
-  .card p { color: var(--muted); font-size: 0.97rem; }
-
-  /* stack */
-  .stack-cols { display: grid; grid-template-columns: repeat(4, 1fr); gap: 26px; }
-  @media (max-width: 820px){ .stack-cols { grid-template-columns: repeat(2, 1fr); } }
-  .stack-cols h4 { font-size: 0.82rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--teal-bright); margin-bottom: 14px; }
-  .chips { display: flex; flex-wrap: wrap; gap: 8px; }
-  .chip { font-family:'JetBrains Mono', monospace; font-size: 0.82rem; padding: 6px 11px; border-radius: 7px; background: var(--navy-700); border: 1px solid var(--line); color: var(--text); }
-
-  /* experience timeline */
-  .timeline { display: grid; gap: 18px; }
-  .role {
-    display: grid; grid-template-columns: 180px 1fr; gap: 28px;
-    background: var(--navy-800); border: 1px solid var(--line);
-    border-radius: var(--radius); padding: 24px 26px;
-  }
-  @media (max-width: 720px){ .role { grid-template-columns: 1fr; gap: 8px; } }
-  .role .when { color: var(--muted); font-size: 0.9rem; font-family:'JetBrains Mono', monospace; }
-  .role h3 { font-size: 1.12rem; margin-bottom: 4px; }
-  .role .org { color: var(--teal-bright); font-weight: 600; font-size: 0.95rem; margin-bottom: 10px; }
-  .role p { color: var(--muted); font-size: 0.97rem; }
-  .placeholder { color: var(--orange); font-style: italic; }
-
-  /* contact */
-  .contact-card {
-    background: linear-gradient(135deg, var(--navy-700), var(--navy-800));
-    border: 1px solid var(--line); border-radius: 18px; padding: 48px;
-    text-align: center;
-  }
-  .contact-card h2 { font-size: clamp(1.6rem, 3.4vw, 2.2rem); letter-spacing: -0.02em; margin-bottom: 12px; }
-  .contact-card p { color: var(--muted); max-width: 52ch; margin: 0 auto 28px; font-size: 1.05rem; }
-  .contact-links { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
-
-  footer { padding: 36px 0; text-align: center; color: var(--muted); font-size: 0.88rem; }
-  footer a { color: var(--muted); }
-</style>
-</head>
-<body>
-
-<div class="accent-rule"><i></i><i></i><i></i><i></i></div>
-
-<header class="topbar">
-  <div class="wrap">
-    <div class="brand">Amit <span>Chaudhary</span></div>
-    <nav class="nav">
-      <a href="#about">About</a>
-      <a href="#services">What I do</a>
-      <a href="#stack">Stack</a>
-      <a href="#experience">Experience</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </div>
-</header>
+---
+layout: default
+---
 
 <!-- ===================== HERO ===================== -->
-<section class="hero" style="border-bottom:1px solid var(--line);">
+<section class="hero">
   <div class="wrap">
-    <div class="eyebrow">Senior Ruby on Rails Engineer &amp; Architect</div>
-    <h1>I build, scale and <em>rescue</em> Ruby on Rails apps for US &amp; UK teams.</h1>
+    <div class="eyebrow">{{ site.tagline }}</div>
+    <h1>{{ site.headline_pre }}<em>{{ site.headline_em }}</em>{{ site.headline_post }}</h1>
     <p class="lede">
-      14+ years shipping production Rails. I work as an <strong>independent contractor</strong> —
+      14+ years shipping production Rails. I work as an <strong>independent contractor</strong>,
       invoicing US/UK clients directly, with solid US-hours overlap and a long async track record.
       I specialize in <strong>legacy Rails upgrades, performance &amp; scaling</strong>, and
       <strong>pragmatic AI-assisted development</strong>.
     </p>
     <div class="cta-row">
       <a class="btn btn-primary" href="#contact">Work with me</a>
-      <a class="btn btn-ghost" href="#experience">See what I do</a>
+      <a class="btn btn-ghost" href="{{ '/resume.pdf' | relative_url }}" target="_blank" rel="noopener">Résumé (PDF)</a>
     </div>
-    <div class="availability"><span class="dot"></span> Currently open to high-rate contract engagements</div>
+    <div class="availability"><span class="dot"></span> {{ site.availability }}</div>
   </div>
 </section>
 
@@ -224,33 +28,12 @@
       <div class="about">
         <div class="section-tag">About</div>
         <h2 class="section-title">A senior engineer you bring in when it has to work.</h2>
-        <p>
-          I've spent the last 14+ years building and architecting Ruby on Rails products across
-          B2B and B2C — from greenfield builds to high-traffic systems that needed to stop falling over.
-          I'm equally comfortable owning architecture decisions and getting my hands dirty in a messy,
-          decade-old codebase.
-        </p>
-        <p>
-          These days I take the work most teams would rather not touch: <strong>version upgrades,
-          performance rescue, scaling pain, and test-suite resurrection</strong>. I step into a codebase,
-          make it boring and reliable again, and leave the team faster than I found them.
-        </p>
-        <p>
-          On AI: I have earned opinions on where coding agents genuinely speed you up versus where
-          they quietly add risk — and how to keep a senior engineer in the loop. I've designed
-          retrieval-grounded, agentic LLM systems end to end, not just prompted a chatbot.
-        </p>
+        {% for p in site.data.profile.about %}<p>{{ p }}</p>{% endfor %}
       </div>
       <aside class="facts">
         <h3>At a glance</h3>
         <dl>
-          <dt>Experience</dt><dd>14+ years</dd>
-          <dt>Core</dt><dd>Ruby on Rails</dd>
-          <dt>Engagement</dt><dd>Independent contractor</dd>
-          <dt>Clients</dt><dd>US &amp; UK remote teams</dd>
-          <dt>Overlap</dt><dd>US business hours</dd>
-          <dt>Billing</dt><dd>Direct, in USD/GBP</dd>
-          <dt>Based in</dt><dd>India (remote)</dd>
+          {% for f in site.data.profile.facts %}<dt>{{ f.k }}</dt><dd>{{ f.v }}</dd>{% endfor %}
         </dl>
       </aside>
     </div>
@@ -263,34 +46,15 @@
     <div class="section-tag">What I do</div>
     <h2 class="section-title">Where I create the most value</h2>
     <p class="section-intro">
-      Most of my engagements fall into one of these. All of them are the kind of work where
-      experience pays for itself quickly.
+      Most of my engagements fall into one of these. The kind of work where experience pays for itself quickly.
     </p>
     <div class="grid">
-      <div class="card t">
-        <h3>Legacy Rails upgrades</h3>
-        <p>Moving stuck apps across major Rails and Ruby versions safely — dependency hell, deprecations, and the test failures nobody wants to own.</p>
+      {% for s in site.data.services %}
+      <div class="card {{ s.color }}">
+        <h3>{{ s.title }}</h3>
+        <p>{{ s.body }}</p>
       </div>
-      <div class="card o">
-        <h3>Performance &amp; scaling</h3>
-        <p>Finding and killing the N+1s, slow queries, and architectural bottlenecks that show up when traffic grows. Postgres and Mongo tuning included.</p>
-      </div>
-      <div class="card r">
-        <h3>Architecture &amp; technical direction</h3>
-        <p>Designing systems that stay simple as they grow. Making the high-stakes calls early so they don't become expensive rewrites later.</p>
-      </div>
-      <div class="card g">
-        <h3>Codebase rescue</h3>
-        <p>Stepping into inherited, under-tested, or abandoned codebases and making them reliable, shippable, and maintainable again.</p>
-      </div>
-      <div class="card t">
-        <h3>AI-assisted development</h3>
-        <p>Building LLM-backed features the right way — retrieval-grounded, evaluated, and shipped — plus helping teams use coding agents without shooting themselves in the foot.</p>
-      </div>
-      <div class="card o">
-        <h3>Fractional senior / mentoring</h3>
-        <p>Acting as the senior voice on a small team: reviewing, unblocking, mentoring, and raising the bar without the gatekeeping.</p>
-      </div>
+      {% endfor %}
     </div>
   </div>
 </section>
@@ -302,35 +66,14 @@
     <h2 class="section-title">Tools I reach for</h2>
     <p class="section-intro">Bias toward simple, proven, boring-in-the-good-way technology. No over-engineering for its own sake.</p>
     <div class="stack-cols">
+      {% for col in site.data.stack %}
       <div>
-        <h4>Core</h4>
+        <h4>{{ col.group }}</h4>
         <div class="chips">
-          <span class="chip">Ruby</span><span class="chip">Rails</span>
-          <span class="chip">Hotwire / Turbo</span><span class="chip">Stimulus</span>
-          <span class="chip">ViewComponent</span><span class="chip">Sidekiq</span>
+          {% for item in col.items %}<span class="chip">{{ item }}</span>{% endfor %}
         </div>
       </div>
-      <div>
-        <h4>Data</h4>
-        <div class="chips">
-          <span class="chip">PostgreSQL</span><span class="chip">MongoDB</span>
-          <span class="chip">Redis</span><span class="chip">Elasticsearch</span>
-        </div>
-      </div>
-      <div>
-        <h4>Infra</h4>
-        <div class="chips">
-          <span class="chip">AWS</span><span class="chip">Docker</span>
-          <span class="chip">CI/CD</span><span class="chip">Sidekiq/Cron</span>
-        </div>
-      </div>
-      <div>
-        <h4>AI</h4>
-        <div class="chips">
-          <span class="chip">LLM agents</span><span class="chip">RAG</span>
-          <span class="chip">Evals</span><span class="chip">Coding agents</span>
-        </div>
-      </div>
+      {% endfor %}
     </div>
   </div>
 </section>
@@ -340,35 +83,29 @@
   <div class="wrap">
     <div class="section-tag">Experience</div>
     <h2 class="section-title">Selected work</h2>
-    <p class="section-intro">
-      A snapshot. <span class="placeholder">Replace the placeholder roles below with your real history,
-      and drop your PDF resume in as <code>resume.pdf</code> — the button links to it automatically.</span>
-    </p>
+    <p class="section-intro">14+ years across B2B and B2C Rails products. Full detail in the <a href="{{ '/resume.pdf' | relative_url }}" target="_blank" rel="noopener">résumé</a>.</p>
     <div class="timeline">
+      {% for r in site.data.experience.roles %}
       <div class="role">
-        <div class="when">Recent</div>
+        <div class="when">{{ r.when }}<small>{{ r.where }}</small></div>
         <div>
-          <h3>Independent Ruby on Rails Contractor</h3>
-          <div class="org">Self-employed · US &amp; UK clients</div>
-          <p>Rails upgrades, performance work, and architecture for remote teams. Engaged directly as a contractor; invoice in USD/GBP.</p>
+          <h3>{{ r.role }}</h3>
+          <div class="org">{{ r.org }}</div>
+          <p>{{ r.body }}</p>
         </div>
       </div>
-      <div class="role">
-        <div class="when">Project</div>
-        <div>
-          <h3>AI itinerary planning system (design)</h3>
-          <div class="org">TravelTriangle · AI systems design</div>
-          <p>End-to-end architecture for a retrieval-grounded, agentic travel-planning engine: trip-memory vector store, constraint optimizer, expert-in-the-loop learning, and a blind evaluation framework against ChatGPT/Gemini.</p>
-        </div>
+      {% endfor %}
+    </div>
+
+    <div class="edu">
+      <h4 class="section-tag" style="margin-top:34px;">Education</h4>
+      {% for e in site.data.experience.education %}
+      <div class="edu-item">
+        <span class="d">{{ e.degree }}</span>
+        <span class="s">{{ e.school }}</span>
+        <span class="w">{{ e.when }}</span>
       </div>
-      <div class="role">
-        <div class="when"><span class="placeholder">YYYY–YYYY</span></div>
-        <div>
-          <h3 class="placeholder">Past role / title</h3>
-          <div class="org placeholder">Company name</div>
-          <p class="placeholder">One or two lines on what you owned and a measurable result (e.g. "cut p95 latency 40%", "scaled to N users").</p>
-        </div>
-      </div>
+      {% endfor %}
     </div>
   </div>
 </section>
@@ -380,28 +117,14 @@
       <h2>Let's talk about your Rails project.</h2>
       <p>
         Whether it's an upgrade you've been putting off, a performance fire, or a senior pair of hands
-        on a small team — tell me what's going on and I'll tell you straight whether I can help.
+        on a small team, tell me what's going on and I'll tell you straight whether I can help.
       </p>
       <div class="contact-links">
-        <a class="btn btn-primary" href="mailto:chaudharyamitiit2007@gmail.com?subject=Rails%20contract%20enquiry">Email me</a>
-        <a class="btn btn-ghost" href="https://www.linkedin.com/in/REPLACE-LINKEDIN-HANDLE" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="btn btn-ghost" href="https://github.com/chaudhary" target="_blank" rel="noopener">GitHub</a>
-        <a class="btn btn-ghost" href="resume.pdf" target="_blank" rel="noopener">Résumé (PDF)</a>
+        <a class="btn btn-primary" href="mailto:{{ site.email }}?subject=Rails%20contract%20enquiry">Email me</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/{{ site.linkedin }}/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn btn-ghost" href="https://github.com/{{ site.github }}" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn btn-ghost" href="{{ '/resume.pdf' | relative_url }}" target="_blank" rel="noopener">Résumé (PDF)</a>
       </div>
     </div>
   </div>
 </section>
-
-<footer>
-  <div class="wrap">
-    © <span id="yr"></span> Amit Chaudhary · Senior Ruby on Rails Engineer &amp; Architect ·
-    Built simple, the way it should be.
-  </div>
-</footer>
-
-<script>
-  document.getElementById('yr').textContent = new Date().getFullYear();
-</script>
-
-</body>
-</html>

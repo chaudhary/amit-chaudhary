@@ -1,0 +1,9 @@
+# Tech stack columns
+- group: Core
+  items: [Ruby, Rails, Hotwire / Turbo, ReactJS, React Native, AngularJS, JavaScript]
+- group: Data
+  items: [PostgreSQL, MongoDB, MySQL, Elasticsearch, OpenSearch, Redis]
+- group: Infra
+  items: [AWS Lambda, AWS S3, AWS ECS, Docker, GitHub Actions, CircleCI, CloudFront]
+- group: AI
+  items: [LLM agents, RAG, Evals, Coding agents]
