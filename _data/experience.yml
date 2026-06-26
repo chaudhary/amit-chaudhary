@@ -1,15 +1,34 @@
 # Work history (most recent first)
 roles:
+- role: Senior Ruby on Rails Engineer
+  org: OutX
+  when: Jan 2026 – Jun 2026
+  where: Remote · Contract
+  logo: outx.png
+  body: >-
+    Contract backend engineering in Ruby on Rails for OutX, an AI-powered LinkedIn
+    social-listening and sales-intelligence platform.
+
 - role: Technical Architect
   org: Qodex.ai
-  when: May 2024 – Present
-  where: Remote
+  when: Jul 2025 – Dec 2025
+  where: Remote · Contract
   logo: qodex.png
   body: >-
-    API automation-testing platform (Ruby on Rails + PostgreSQL + ReactJS). Own backend
-    architecture and RESTful APIs, automated deploys on Docker / ECS / GitHub Actions, and
-    SEO-indexable public pages via AWS Lambda, S3 and CloudFront. Built a system for
-    defining dynamic JavaScript functions from the UI, executed server-side with ExecJS.
+    Contract role on an API automation-testing platform (Ruby on Rails + PostgreSQL +
+    ReactJS). Owned backend architecture and RESTful APIs, automated deploys on Docker /
+    ECS / GitHub Actions, SEO-indexable public pages via AWS Lambda, S3 and CloudFront, and
+    a system for defining dynamic JavaScript functions from the UI, executed server-side
+    with ExecJS.
+
+- role: Senior Ruby on Rails Engineer
+  org: Building Intelligence
+  when: Apr 2024 – Jul 2025
+  where: Remote · Contract via Toptal
+  logo: buildingintelligence.png
+  body: >-
+    Contract Ruby on Rails engineering (via Toptal) for Building Intelligence, a US
+    physical-security SaaS for visitor, vehicle and vendor management.
 
 - role: Lead Software Engineer
   org: W Energy Software (SevenLakes Technologies)
