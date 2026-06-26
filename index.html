@@ -4,20 +4,25 @@ layout: default
 
 <!-- ===================== HERO ===================== -->
 <section class="hero">
-  <div class="wrap">
-    <div class="eyebrow">{{ site.tagline }}</div>
-    <h1>{{ site.headline_pre }}<em>{{ site.headline_em }}</em>{{ site.headline_post }}</h1>
-    <p class="lede">
-      14+ years shipping production Rails. I work as an <strong>independent contractor</strong>,
-      invoicing US/UK clients directly, with solid US-hours overlap and a long async track record.
-      I specialize in <strong>legacy Rails upgrades, performance &amp; scaling</strong>, and
-      <strong>pragmatic AI-assisted development</strong>.
-    </p>
-    <div class="cta-row">
-      <a class="btn btn-primary" href="#contact">Work with me</a>
-      <a class="btn btn-ghost" href="{{ '/resume.pdf' | relative_url }}" target="_blank" rel="noopener">Résumé (PDF)</a>
+  <div class="wrap hero-wrap">
+    <div class="hero-text">
+      <div class="eyebrow">{{ site.tagline }}</div>
+      <h1>{{ site.headline_pre }}<em>{{ site.headline_em }}</em>{{ site.headline_post }}</h1>
+      <p class="lede">
+        14+ years shipping production Rails. I work as an <strong>independent contractor</strong>,
+        invoicing US/UK clients directly, with solid US-hours overlap and a long async track record.
+        I specialize in <strong>legacy Rails upgrades, performance &amp; scaling</strong>, and
+        <strong>pragmatic AI-assisted development</strong>.
+      </p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#contact">Work with me</a>
+        <a class="btn btn-ghost" href="{{ '/resume.pdf' | relative_url }}" target="_blank" rel="noopener">Résumé (PDF)</a>
+      </div>
+      <div class="availability"><span class="dot"></span> {{ site.availability }}</div>
     </div>
-    <div class="availability"><span class="dot"></span> {{ site.availability }}</div>
+    <div class="hero-portrait">
+      <img src="{{ '/assets/img/amit.jpg' | relative_url }}" alt="Amit Chaudhary" width="300" height="300" />
+    </div>
   </div>
 </section>
 
