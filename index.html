@@ -119,6 +119,23 @@ layout: default
   </div>
 </section>
 
+<!-- ===================== ENGAGEMENT ===================== -->
+<section id="engagement">
+  <div class="wrap">
+    <div class="section-tag">Working together</div>
+    <h2 class="section-title">Easy to hire, easy to work with</h2>
+    <p class="section-intro">{{ site.data.engagement.intro }}</p>
+    <div class="grid grid-2">
+      {% for p in site.data.engagement.points %}
+      <div class="card {{ p.color }}">
+        <h3>{{ p.title }}</h3>
+        <p>{{ p.body }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
 <!-- ===================== CONTACT ===================== -->
 <section id="contact" style="border-bottom:none;">
   <div class="wrap">

@@ -124,7 +124,8 @@ section { padding: 76px 0; border-bottom: 1px solid var(--line); }
 
 /* cards grid */
 .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-@media (max-width: 860px){ .grid { grid-template-columns: 1fr; } }
+.grid.grid-2 { grid-template-columns: repeat(2, 1fr); }
+@media (max-width: 860px){ .grid, .grid.grid-2 { grid-template-columns: 1fr; } }
 .card {
   background: var(--navy-800); border: 1px solid var(--line);
   border-radius: var(--radius); padding: 26px; position: relative; overflow: hidden;
