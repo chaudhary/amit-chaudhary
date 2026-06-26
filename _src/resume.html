@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8">
+<title>Amit Chaudhary Résumé</title>
+<style>
+  @page { size: Letter; margin: 14mm 15mm; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:"Helvetica Neue",Helvetica,Arial,sans-serif; color:#1c2530; font-size:10.3px; line-height:1.45; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  a { color:#0f7d68; text-decoration:none; }
+
+  /* header */
+  .name { font-size:25px; font-weight:800; letter-spacing:-0.5px; color:#0d1626; }
+  .title { font-size:11.5px; font-weight:600; color:#0f7d68; margin-top:2px; letter-spacing:0.3px; }
+  .contact { margin-top:7px; font-size:9.6px; color:#46535f; }
+  .contact a { color:#46535f; }
+  .contact .sep { color:#b8c0c8; padding:0 6px; }
+  .rule { height:2px; background:#0f7d68; margin:9px 0 0; }
+
+  /* sections */
+  .sec { margin-top:15px; }
+  .sec-h { font-size:11px; font-weight:800; letter-spacing:1.4px; text-transform:uppercase; color:#0d1626; border-bottom:1px solid #d7dde2; padding-bottom:3px; margin-bottom:9px; }
+
+  .summary { color:#384552; }
+
+  .role { margin-bottom:11px; break-inside:avoid; }
+  .role-top { display:flex; justify-content:space-between; align-items:baseline; gap:12px; }
+  .role-title { font-size:11.4px; font-weight:700; color:#0d1626; }
+  .role-org { color:#0f7d68; font-weight:600; }
+  .role-when { font-size:9.3px; color:#67727d; white-space:nowrap; font-variant-numeric:tabular-nums; }
+  .role-where { font-size:9.3px; color:#8a949d; margin-top:0; }
+  .role-body { margin-top:3px; color:#384552; }
+
+  .skills { display:grid; grid-template-columns:78px 1fr; row-gap:5px; column-gap:10px; }
+  .skills dt { font-weight:700; color:#0d1626; }
+  .skills dd { color:#384552; }
+
+  .edu { display:flex; justify-content:space-between; align-items:baseline; gap:12px; }
+  .edu .d { font-weight:700; color:#0d1626; }
+  .edu .s { color:#384552; }
+  .edu .w { font-size:9.3px; color:#67727d; white-space:nowrap; }
+</style></head>
+<body>
+
+  <div class="name">Amit Chaudhary</div>
+  <div class="title">Senior Ruby on Rails Engineer &amp; Architect</div>
+  <div class="contact">
+    <a href="mailto:chaudharyamitiit2007@gmail.com">chaudharyamitiit2007@gmail.com</a><span class="sep">|</span>
+    +91-8882973475<span class="sep">|</span>India (Remote)<span class="sep">|</span>
+    <a href="https://www.linkedin.com/in/amit-chaudhary-iitg/">linkedin.com/in/amit-chaudhary-iitg</a><span class="sep">|</span>
+    <a href="https://github.com/chaudhary">github.com/chaudhary</a>
+  </div>
+  <div class="rule"></div>
+
+  <div class="sec">
+    <div class="sec-h">Summary</div>
+    <div class="summary">
+      Senior Ruby on Rails engineer and architect with 14+ years building production B2B and B2C
+      products. Independent contractor for US and UK remote teams, invoicing directly. Specialized in
+      legacy Rails and Ruby upgrades, performance and scaling, codebase rescue, and pragmatic
+      AI-assisted development.
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-h">Experience</div>
+
+    <div class="role">
+      <div class="role-top"><div><span class="role-title">Staff Engineer</span>, <span class="role-org">OutX</span></div><div class="role-when">Jan 2026 &ndash; Jun 2026</div></div>
+      <div class="role-where">Remote &middot; Contract</div>
+      <div class="role-body">Subscription LinkedIn tracking and automation platform where users follow keywords to surface relevant posts and automate their LinkedIn workflows. Built the backend on Supabase and the React + JavaScript Chrome extension that powers the in-LinkedIn experience.</div>
+    </div>
+
+    <div class="role">
+      <div class="role-top"><div><span class="role-title">Technical Architect</span>, <span class="role-org">Qodex.ai</span></div><div class="role-when">Jul 2025 &ndash; Dec 2025</div></div>
+      <div class="role-where">Remote &middot; Contract</div>
+      <div class="role-body">API automation-testing platform (Ruby on Rails + PostgreSQL + ReactJS). Owned backend architecture and RESTful APIs, automated deploys on Docker / ECS / GitHub Actions, SEO-indexable public pages via AWS Lambda, S3 and CloudFront, and a system for defining dynamic JavaScript functions from the UI, executed server-side with ExecJS.</div>
+    </div>
+
+    <div class="role">
+      <div class="role-top"><div><span class="role-title">Senior Ruby on Rails Engineer</span>, <span class="role-org">Building Intelligence</span></div><div class="role-when">Apr 2024 &ndash; Jul 2025</div></div>
+      <div class="role-where">Remote &middot; Contract via Toptal</div>
+      <div class="role-body">Monolithic US physical-security platform for visitor, vehicle and vendor management (Ruby on Rails + MongoDB/Mongoid backend, AngularJS frontend). Led the Ruby and Rails version upgrade plus Mongoid and OpenSearch modernization, refactored the scheduling and delivery feature, and built a data-import system for drivers, vendors, tenants and other entity types.</div>
+    </div>
+
+    <div class="role">
+      <div class="role-top"><div><span class="role-title">Lead Software Engineer</span>, <span class="role-org">W Energy Software (SevenLakes Technologies)</span></div><div class="role-when">Oct 2022 &ndash; Mar 2024</div></div>
+      <div class="role-where">Remote</div>
+      <div class="role-body">Led backend development of a cloud oil-&amp;-gas ERP SaaS in Ruby on Rails with a team of five. Owned core backend functionality and unit testing, and maintained the AWS deployment infrastructure, monitoring service performance day to day.</div>
+    </div>
+
+    <div class="role">
+      <div class="role-top"><div><span class="role-title">Senior Backend Engineer</span>, <span class="role-org">HealthTap India</span></div><div class="role-when">Nov 2018 &ndash; Oct 2022</div></div>
+      <div class="role-where">Gurgaon</div>
+      <div class="role-body">Backend for a nationwide US virtual primary-care practice. Built automated GitHub branch backmerge via Actions + REST API, a generic email open/click tracking system, customised delayed_job for multi-threaded jobs, an affiliate model with event tracking, and pipelines for importing complex enterprise data files.</div>
+    </div>
+
+    <div class="role">
+      <div class="role-top"><div><span class="role-title">Senior Product Engineer</span>, <span class="role-org">AlmaConnect Solutions</span></div><div class="role-when">Dec 2012 &ndash; Oct 2018</div></div>
+      <div class="role-where">Gurgaon</div>
+      <div class="role-body">Built AlmaConnect (alumni networking) and Tradilio (stock-trading social app) on Ruby on Rails, MongoDB, Elasticsearch, AngularJS and React Native. Published the open-source AcDenormalize gem for denormalizing association fields, integrated RazorPay/ATOM payments, did AWS Lambda image processing, and designed real-time chat with Pusher.</div>
+    </div>
+
+    <div class="role">
+      <div class="role-top"><div><span class="role-title">Software Engineer</span>, <span class="role-org">Navyug Infosolutions</span></div><div class="role-when">Oct 2011 &ndash; Dec 2012</div></div>
+      <div class="role-where">Noida</div>
+      <div class="role-body">Built Ruby on Rails + SproutCore web applications and implemented business schemes using a Drools rule engine.</div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-h">Technical Skills</div>
+    <dl class="skills">
+      <dt>Core</dt><dd>Ruby, Rails, Hotwire / Turbo, ReactJS, React Native, AngularJS, JavaScript, jQuery, HTML5, CSS3</dd>
+      <dt>Data</dt><dd>PostgreSQL, MongoDB, MySQL, Supabase, Elasticsearch, OpenSearch, Redis</dd>
+      <dt>Infra</dt><dd>AWS (Lambda, S3, ECS, CloudFront), Docker, GitHub Actions, CircleCI, Git</dd>
+      <dt>AI</dt><dd>LLM agents, RAG, evaluations, coding-agent workflows</dd>
+    </dl>
+  </div>
+
+  <div class="sec">
+    <div class="sec-h">Education</div>
+    <div class="edu">
+      <div><span class="d">B.Tech, Engineering Physics</span> &middot; <span class="s">Indian Institute of Technology, Guwahati</span></div>
+      <div class="w">2011 &middot; 7.35 CGPA</div>
+    </div>
+  </div>
+
+</body></html>
