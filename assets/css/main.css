@@ -163,8 +163,33 @@ section { padding: 76px 0; border-bottom: 1px solid var(--line); }
 .logo-tile img { max-width: 100%; max-height: 100%; object-fit: contain; display: block; }
 .role .when { color: var(--muted); font-size: 0.88rem; font-family:'JetBrains Mono', monospace; }
 .role .when small { display:block; color: var(--muted); opacity:.75; margin-top: 4px; }
-.role h3 { font-size: 1.12rem; margin-bottom: 4px; }
-.role .org { color: var(--teal-bright); font-weight: 600; font-size: 0.95rem; margin-bottom: 10px; }
+.role-header { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; margin-bottom: 4px; }
+.role h3 { font-size: 1.12rem; margin-bottom: 0; }
+.role-badge {
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 3px 8px;
+  border-radius: 6px;
+  background: rgba(23,165,137,0.15);
+  color: var(--teal-bright);
+  border: 1px solid rgba(23,165,137,0.3);
+  font-family: 'JetBrains Mono', monospace;
+}
+.role .org { color: var(--teal-bright); font-weight: 600; font-size: 0.95rem; margin-bottom: 10px; display: flex; align-items: center; flex-wrap: wrap; gap: 8px; }
+.role-link {
+  font-size: 0.82rem;
+  color: var(--orange);
+  font-weight: 500;
+  font-family: 'JetBrains Mono', monospace;
+}
+.role-link:hover { color: #fff; text-decoration: underline; }
+.role-desc { color: var(--muted); font-size: 0.97rem; margin-bottom: 12px; }
+.role-bullets { list-style: none; display: grid; gap: 8px; margin-top: 10px; padding: 0; }
+.role-bullets li { position: relative; padding-left: 18px; color: var(--muted); font-size: 0.93rem; line-height: 1.55; }
+.role-bullets li::before { content: "•"; position: absolute; left: 0; color: var(--teal-bright); font-size: 1.15rem; line-height: 1.2; }
+.role-bullets li strong { color: var(--text); font-weight: 600; }
 .role p { color: var(--muted); font-size: 0.97rem; }
 
 /* education */

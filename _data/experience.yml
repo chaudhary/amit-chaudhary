@@ -1,81 +1,127 @@
 # Work history (most recent first)
 roles:
-- role: Staff Engineer
-  org: OutX
-  when: Jan 2026 – Jun 2026
-  where: Remote · Contract
-  logo: outx.png
-  body: >-
-    OutX is a subscription LinkedIn tracking and automation platform: users follow keywords
-    to surface relevant posts and automate their LinkedIn workflows. Built the backend on
-    Supabase and the React + JavaScript Chrome extension that powers the in-LinkedIn experience.
-
-- role: Technical Architect
-  org: Qodex.ai
-  when: Jul 2025 – Dec 2025
+- role: Software Architect (Contract)
+  org: QodexAI / Anvitae Inc (US)
+  badge: Contract
+  when: Dec 2024 – Jun 2026
   where: Remote · Contract
   logo: qodex.png
   body: >-
-    Contract role on an API automation-testing platform (Ruby on Rails + PostgreSQL +
-    ReactJS). Owned backend architecture and RESTful APIs, automated deploys on Docker /
-    ECS / GitHub Actions, SEO-indexable public pages via AWS Lambda, S3 and CloudFront, and
-    a system for defining dynamic JavaScript functions from the UI, executed server-side
-    with ExecJS.
+    Architected core agentic AI engines, led product engineering for OutxAI, and engineered
+    containerized cloud infrastructure on AWS for US-based clients.
+  bullets:
+    - label: AI & Cloud Architecture
+      text: Architected core agentic AI engines leveraging OpenAI and Anthropic APIs; engineered containerized AWS ECS cloud architecture to host backends with high availability.
+    - label: Product Engineering (OutxAI)
+      text: Architected OutxAI, an intelligence and scraping tool built with Supabase, TypeScript, PostgreSQL, and React, automated via AWS Amplify.
+    - label: Distributed Scheduling
+      text: Designed scalable scheduling infrastructure supporting multi-scenario build groupings, job queuing, and flexible cron-frequency execution.
 
-- role: Senior Ruby on Rails Engineer
-  org: Building Intelligence
-  when: Apr 2024 – Jul 2025
+- role: Senior Rails Consultant (Contract)
+  org: Building Intelligence (US, via Toptal)
+  badge: Contract via Toptal
+  when: Apr 2024 – Dec 2025
   where: Remote · Contract via Toptal
   logo: buildingintelligence.png
   body: >-
-    Via Toptal, on Building Intelligence's monolithic physical-security platform for visitor,
-    vehicle and vendor management (Ruby on Rails + MongoDB/Mongoid backend, AngularJS
-    frontend). Led the Ruby and Rails version upgrade plus Mongoid and OpenSearch
-    modernization, refactored the scheduling and delivery feature, and built a data-import
-    system for drivers, vendors, tenants and other entity types.
+    Via Toptal, spearheaded technical modernization and version upgrades for a monolithic enterprise
+    physical-security platform for visitor, vehicle, and vendor management.
+  bullets:
+    - label: Core Modernization
+      text: Spearheaded technical modernization and version upgrades for a monolithic enterprise physical-security platform, migrating legacy systems across major Ruby, Rails, and Mongoid (MongoDB) versions.
+    - label: Search Infrastructure
+      text: Modernized search architecture by migrating the platform to OpenSearch, significantly improving query performance and indexing for large-scale security data.
+    - label: Scheduling & Ingestion Pipelines
+      text: Refactored core scheduling engines to eliminate bottlenecks and optimize resource allocation; built high-throughput data-import pipelines for bulk multi-tenant entity ingestion and validation.
+
+- role: "Proprietary Project: AlgoTrading"
+  org: Automated Equity Trading Platform
+  badge: Live Platform
+  url: https://algo-trading-frontend.algo-trading.workers.dev/
+  url_text: algo-trading.workers.dev
+  when: Live & In Production
+  where: Cloudflare Edge · GCP · PostgreSQL
+  logo: algotrading.svg
+  body: >-
+    Architected and built an automated quantitative equity trading platform with global edge deployment,
+    absolute idempotency controls, and automated multi-factor authentication.
+  bullets:
+    - label: Edge & Serverless Stack
+      text: Architected a single-page trading application using React, TypeScript, and Vite deployed globally on Cloudflare Workers edge, with a decoupled, strongly typed API client layer.
+    - label: Execution Engine & Idempotency
+      text: Engineered a real-time, event-driven quantitative engine using Deno and PostgreSQL pg_cron, leveraging distributed advisory locks to enforce absolute idempotency and eliminate order race conditions.
+    - label: Risk Controls & Sweeps
+      text: Designed quantitative risk mitigation controls including automated End-of-Day order sweeping, exchange tick-size quantization, circuit-band error caching, and global circuit-breaker mechanisms.
+    - label: Cloud Infrastructure & Headless Auth
+      text: Provisioned GCP Compute Engine infrastructure with dedicated static-IP proxies and Playwright headless browser workers for automated multi-factor authentication (TOTP) to broker APIs.
 
 - role: Lead Software Engineer
-  org: W Energy Software (SevenLakes Technologies)
+  org: W Energy Software
   when: Oct 2022 – Mar 2024
   where: Remote
   logo: wenergy.png
   body: >-
-    Led backend development of a cloud oil-&-gas ERP SaaS in Ruby on Rails with a team of
-    five. Owned core backend functionality, unit testing, and the AWS deployment
-    infrastructure, monitoring service performance day to day.
+    Led backend development of a cloud oil-&-gas ERP SaaS in Ruby on Rails with a team of five engineers,
+    owning high-volume financial modules and automated billing workflows.
+  bullets:
+    - label: Core Financial Modules
+      text: Architected and optimized core financial modules responsible for high-volume automated ledger balancing, invoice reconciliation, and payment matching.
+    - label: Dynamic Currency Conversion
+      text: Engineered dynamic currency conversion infrastructure, ensuring accurate, multi-tenant global transactions compliant with shifting forex rates.
+    - label: Scalable Billing Algorithms
+      text: Designed scalable billing algorithms that automated complex payment-to-invoice workflows, eliminating manual auditing errors.
 
 - role: Senior Backend Engineer
-  org: HealthTap India
-  when: Nov 2018 – Oct 2022
-  where: Gurgaon
+  org: HealthTap
+  when: Oct 2018 – Oct 2022
+  where: Gurgaon (US Remote Healthcare)
   logo: healthtap.png
   body: >-
-    Backend for a nationwide US virtual primary-care practice. Built automated GitHub
-    branch backmerge via Actions + REST API, a generic email open/click tracking system,
-    customised delayed_job for multi-threaded jobs, an affiliate model with event tracking,
-    and pipelines for complex enterprise data imports.
+    Engineered backend systems in Ruby on Rails for a nationwide US virtual primary-care practice handling
+    high-volume patient data, background processing, and enterprise imports.
+  bullets:
+    - label: Medical Data Ingestion
+      text: Engineered backend systems using Ruby on Rails to architect heavy data-import systems optimized to parse, validate, and securely process high-volume, complex client medical data files from enterprise partners.
+    - label: Asynchronous Background Workers
+      text: Optimized asynchronous background workers by customizing process lifecycle hooks to execute multi-threaded background tasks, maximizing resource utilization.
+    - label: Affiliation & Attribution Engines
+      text: Designed multi-tenant client affiliation engines and complex event-tracking systems to scale affiliate partnership workflows and attribution pipelines.
+    - label: Automated CI/CD Pipelines
+      text: Automated code delivery pipelines by designing custom CI/CD backmerge workflows leveraging automation scripts and platform APIs.
 
-- role: Senior Product Engineer
-  org: AlmaConnect Solutions
+- role: Sr. Product Engineer
+  org: Alma Connect
   when: Dec 2012 – Oct 2018
   where: Gurgaon
   logo: almaconnect.png
   body: >-
-    Built AlmaConnect (alumni networking) and Tradilio (stock-trading social app) on Ruby on
-    Rails, MongoDB, Elasticsearch, AngularJS and React Native. Published the open-source
-    AcDenormalize gem, integrated RazorPay/ATOM payments, did AWS Lambda image processing,
-    and designed real-time chat with Pusher.
+    Founding product engineer for AlmaConnect (alumni networking) and Tradilio (social trading). Built core
+    backend services, real-time features, and cross-platform mobile apps.
+  bullets:
+    - label: Open-Source Database Gem
+      text: Designed and open-sourced a reusable database utility gem (AcDenormalize) to handle complex field denormalization across active relational associations, optimizing query performance.
+    - label: Marketing Campaign Infrastructure
+      text: Architected multi-tenant marketing campaign infrastructure, engineering modular target audience filters and granular performance reporting modules.
+    - label: Payment Gateways
+      text: Integrated secure transaction and payment processing gateways (ATOM and RazorPay) to manage high-volume event ticketing and donation workflows.
+    - label: Mobile Application
+      text: Developed and deployed the cross-platform React Native mobile application, maintaining feature parity with the core desktop platform.
 
 - role: Software Engineer
-  org: Navyug Infosolutions
-  when: Oct 2011 – Dec 2012
+  org: Navyug Infosolutions Pvt. Ltd.
+  when: Jun 2011 – Dec 2012
   where: Noida
   logo: navyug.png
   body: >-
-    Built Ruby on Rails + SproutCore web apps and implemented business schemes with a Drools
-    rule engine.
+    Developed and maintained dynamic web applications utilizing Ruby on Rails, focusing on clean code practices,
+    Drools business rules, and database query optimization.
+  bullets:
+    - label: Web Application Engineering
+      text: Developed and maintained dynamic web applications utilizing Ruby on Rails, focusing on clean code practices and efficient feature implementation.
+    - label: Server-Side Query Optimization
+      text: Conducted comprehensive server-side data analysis using database query optimization techniques to improve application performance.
 
 education:
-  - degree: B.Tech, Engineering Physics
-    school: Indian Institute of Technology, Guwahati
-    when: 2011 · 7.35 CGPA
+  - degree: Bachelor of Technology (B.Tech), Engineering Physics
+    school: Indian Institute of Technology (IIT) Guwahati
+    when: "2011 · GPA: 7.35 / 10.0"

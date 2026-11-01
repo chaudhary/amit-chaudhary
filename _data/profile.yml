@@ -1,14 +1,16 @@
 # About paragraphs and the "at a glance" facts box
 about:
-  - "I've spent 14+ years building and architecting Ruby on Rails products across B2B and B2C, from greenfield builds to high-traffic systems that needed to stop falling over. I'm equally comfortable owning architecture decisions as a Technical Architect and getting my hands dirty in a messy, decade-old codebase."
-  - "I take the work most teams would rather not touch: <strong>version upgrades, performance rescue, scaling pain, and test-suite resurrection</strong>. I step into a codebase, make it boring and reliable again, and leave the team faster than I found them."
-  - "On AI, I have earned opinions on where coding agents genuinely speed you up versus where they quietly add risk, and how to keep a senior engineer in the loop. I've designed retrieval-grounded, agentic LLM systems end to end, not just prompted a chatbot."
+  - "Software Architect with 14+ years of experience designing, architecting, and scaling high-performance distributed systems. Proven track record of leading cross-functional engineering teams, modernizing legacy enterprise monoliths, and delivering complex, data-intensive applications for US technology companies."
+  - "Deep specialization across <strong>full-stack engineering (Ruby on Rails, RSpec, Supabase, TypeScript, React)</strong> and <strong>cloud-native architecture on AWS (ECS, Lambda, S3, CloudFront)</strong>. Equally comfortable owning high-stakes technical architecture decisions and executing hands-on migrations across complex, multi-tenant production systems."
+  - "Specialized in <strong>AI Engineering &amp; Agentic Systems</strong>: architecting core autonomous agentic engines leveraging OpenAI and Anthropic APIs, designing distributed scheduling workflows, and engineering quantitative fintech trading systems with absolute idempotency and risk mitigation."
 
 facts:
-  - { k: "Experience",  v: "14+ years" }
-  - { k: "Core",        v: "Ruby on Rails" }
-  - { k: "Current",     v: "Technical Architect" }
-  - { k: "Engagement",  v: "Independent contractor" }
-  - { k: "Clients",     v: "US & UK remote teams" }
-  - { k: "Overlap",     v: "US business hours" }
-  - { k: "Education",   v: "B.Tech, IIT Guwahati" }
+  - { k: "Experience",    v: "14+ years" }
+  - { k: "Current Role",  v: "Software Architect & Consultant" }
+  - { k: "Core Focus",    v: "Distributed Systems & AI" }
+  - { k: "Full-Stack",    v: "Rails · TypeScript · React · Supabase" }
+  - { k: "Cloud & Infra", v: "AWS (ECS, Lambda, S3) · Docker" }
+  - { k: "Engagement",    v: "Independent Consultant (W-8BEN)" }
+  - { k: "Clients",       v: "US Technology & Fintech Teams" }
+  - { k: "Availability",  v: "US Business Hours Overlap" }
+  - { k: "Education",     v: "B.Tech, IIT Guwahati (GPA 7.35)" }

@@ -1,127 +1,226 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8">
+<html lang="en">
+<head>
+<meta charset="UTF-8">
 <title>Amit Chaudhary Résumé</title>
 <style>
-  @page { size: Letter; margin: 14mm 15mm; }
+  @page { size: Letter; margin: 12mm 15mm; }
   * { margin:0; padding:0; box-sizing:border-box; }
-  body { font-family:"Helvetica Neue",Helvetica,Arial,sans-serif; color:#1c2530; font-size:10.3px; line-height:1.45; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
-  a { color:#0f7d68; text-decoration:none; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #1a202c;
+    font-size: 9.8px;
+    line-height: 1.45;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  a { color: #0969da; text-decoration: none; }
+  a:hover { text-decoration: underline; }
 
-  /* header */
-  .name { font-size:25px; font-weight:800; letter-spacing:-0.5px; color:#0d1626; }
-  .title { font-size:11.5px; font-weight:600; color:#0f7d68; margin-top:2px; letter-spacing:0.3px; }
-  .contact { margin-top:7px; font-size:9.6px; color:#46535f; }
-  .contact a { color:#46535f; }
-  .contact .sep { color:#b8c0c8; padding:0 6px; }
-  .rule { height:2px; background:#0f7d68; margin:9px 0 0; }
+  /* Header */
+  .header { text-align: center; margin-bottom: 12px; }
+  .name { font-size: 20px; font-weight: 800; letter-spacing: 0.5px; text-transform: uppercase; color: #0d1626; margin-bottom: 5px; }
+  .contact { font-size: 9.5px; color: #334155; margin-bottom: 7px; display: flex; justify-content: space-between; flex-wrap: wrap; }
+  .contact a { color: #0969da; }
+  .headline { font-size: 11.5px; font-weight: 700; color: #0d1626; margin-top: 4px; }
 
-  /* sections */
-  .sec { margin-top:15px; }
-  .sec-h { font-size:11px; font-weight:800; letter-spacing:1.4px; text-transform:uppercase; color:#0d1626; border-bottom:1px solid #d7dde2; padding-bottom:3px; margin-bottom:9px; }
+  /* Section styles */
+  .sec { margin-top: 10px; }
+  .sec-title {
+    font-size: 11px;
+    font-weight: 700;
+    color: #0d1626;
+    border-bottom: 1px solid #1a202c;
+    padding-bottom: 2px;
+    margin-bottom: 6px;
+  }
 
-  .summary { color:#384552; }
+  p { margin-bottom: 4px; color: #2d3748; }
 
-  .role { margin-bottom:11px; break-inside:avoid; }
-  .role-top { display:flex; justify-content:space-between; align-items:baseline; gap:12px; }
-  .role-title { font-size:11.4px; font-weight:700; color:#0d1626; }
-  .role-org { color:#0f7d68; font-weight:600; }
-  .role-when { font-size:9.3px; color:#67727d; white-space:nowrap; font-variant-numeric:tabular-nums; }
-  .role-where { font-size:9.3px; color:#8a949d; margin-top:0; }
-  .role-body { margin-top:3px; color:#384552; }
+  /* Lists */
+  ul { list-style: none; padding-left: 0; }
+  li {
+    position: relative;
+    padding-left: 14px;
+    margin-bottom: 3.5px;
+    color: #2d3748;
+  }
+  li::before {
+    content: "●";
+    position: absolute;
+    left: 0;
+    font-size: 7.5px;
+    top: 1px;
+    color: #000;
+  }
+  li strong { color: #0d1626; }
 
-  .skills { display:grid; grid-template-columns:78px 1fr; row-gap:5px; column-gap:10px; }
-  .skills dt { font-weight:700; color:#0d1626; }
-  .skills dd { color:#384552; }
+  /* Skills grid */
+  .skills-grid { display: grid; grid-template-columns: 140px 1fr; gap: 4px 10px; }
+  .skills-grid dt { font-weight: 700; color: #0d1626; }
+  .skills-grid dd { color: #2d3748; }
 
-  .edu { display:flex; justify-content:space-between; align-items:baseline; gap:12px; }
-  .edu .d { font-weight:700; color:#0d1626; }
-  .edu .s { color:#384552; }
-  .edu .w { font-size:9.3px; color:#67727d; white-space:nowrap; }
-</style></head>
+  /* Experience */
+  .role-entry { margin-bottom: 8px; break-inside: avoid; }
+  .role-head { display: flex; justify-content: space-between; align-items: baseline; font-weight: 700; color: #0d1626; font-size: 10px; }
+  .role-sub { font-style: italic; color: #4a5568; margin-bottom: 4px; }
+  .project-url { font-size: 9.5px; margin-bottom: 4px; }
+  .project-url a { font-weight: 600; }
+
+  .page-break { page-break-before: always; }
+</style>
+</head>
 <body>
 
-  <div class="name">Amit Chaudhary</div>
-  <div class="title">Senior Ruby on Rails Engineer &amp; Architect</div>
-  <div class="contact">
-    <a href="mailto:chaudharyamitiit2007@gmail.com">chaudharyamitiit2007@gmail.com</a><span class="sep">|</span>
-    +91-8882973475<span class="sep">|</span>India (Remote)<span class="sep">|</span>
-    <a href="https://www.linkedin.com/in/amit-chaudhary-iitg/">linkedin.com/in/amit-chaudhary-iitg</a><span class="sep">|</span>
-    <a href="https://github.com/chaudhary">github.com/chaudhary</a>
-  </div>
-  <div class="rule"></div>
-
-  <div class="sec">
-    <div class="sec-h">Summary</div>
-    <div class="summary">
-      Senior Ruby on Rails engineer and architect with 14+ years building production B2B and B2C
-      products. Independent contractor for US and UK remote teams, invoicing directly. Specialized in
-      legacy Rails and Ruby upgrades, performance and scaling, codebase rescue, and pragmatic
-      AI-assisted development.
+  <!-- PAGE 1 -->
+  <div class="header">
+    <div class="name">Amit Chaudhary</div>
+    <div class="contact">
+      <span><a href="https://github.com/chaudhary">https://github.com/chaudhary</a></span>
+      <span>+91-8882973475</span>
     </div>
+    <div class="contact" style="margin-top:-2px;">
+      <span><a href="https://www.linkedin.com/in/amit-chaudhary-iitg/">https://www.linkedin.com/in/amit-chaudhary-iitg/</a></span>
+      <span><a href="mailto:chaudharyamitiit2007@gmail.com">chaudharyamitiit2007@gmail.com</a></span>
+    </div>
+    <div class="headline">Software Architect | Full-Stack Leader | AI Systems Specialist</div>
   </div>
 
   <div class="sec">
-    <div class="sec-h">Experience</div>
-
-    <div class="role">
-      <div class="role-top"><div><span class="role-title">Staff Engineer</span>, <span class="role-org">OutX</span></div><div class="role-when">Jan 2026 &ndash; Jun 2026</div></div>
-      <div class="role-where">Remote &middot; Contract</div>
-      <div class="role-body">Subscription LinkedIn tracking and automation platform where users follow keywords to surface relevant posts and automate their LinkedIn workflows. Built the backend on Supabase and the React + JavaScript Chrome extension that powers the in-LinkedIn experience.</div>
-    </div>
-
-    <div class="role">
-      <div class="role-top"><div><span class="role-title">Technical Architect</span>, <span class="role-org">Qodex.ai</span></div><div class="role-when">Jul 2025 &ndash; Dec 2025</div></div>
-      <div class="role-where">Remote &middot; Contract</div>
-      <div class="role-body">API automation-testing platform (Ruby on Rails + PostgreSQL + ReactJS). Owned backend architecture and RESTful APIs, automated deploys on Docker / ECS / GitHub Actions, SEO-indexable public pages via AWS Lambda, S3 and CloudFront, and a system for defining dynamic JavaScript functions from the UI, executed server-side with ExecJS.</div>
-    </div>
-
-    <div class="role">
-      <div class="role-top"><div><span class="role-title">Senior Ruby on Rails Engineer</span>, <span class="role-org">Building Intelligence</span></div><div class="role-when">Apr 2024 &ndash; Jul 2025</div></div>
-      <div class="role-where">Remote &middot; Contract via Toptal</div>
-      <div class="role-body">Monolithic US physical-security platform for visitor, vehicle and vendor management (Ruby on Rails + MongoDB/Mongoid backend, AngularJS frontend). Led the Ruby and Rails version upgrade plus Mongoid and OpenSearch modernization, refactored the scheduling and delivery feature, and built a data-import system for drivers, vendors, tenants and other entity types.</div>
-    </div>
-
-    <div class="role">
-      <div class="role-top"><div><span class="role-title">Lead Software Engineer</span>, <span class="role-org">W Energy Software (SevenLakes Technologies)</span></div><div class="role-when">Oct 2022 &ndash; Mar 2024</div></div>
-      <div class="role-where">Remote</div>
-      <div class="role-body">Led backend development of a cloud oil-&amp;-gas ERP SaaS in Ruby on Rails with a team of five. Owned core backend functionality and unit testing, and maintained the AWS deployment infrastructure, monitoring service performance day to day.</div>
-    </div>
-
-    <div class="role">
-      <div class="role-top"><div><span class="role-title">Senior Backend Engineer</span>, <span class="role-org">HealthTap India</span></div><div class="role-when">Nov 2018 &ndash; Oct 2022</div></div>
-      <div class="role-where">Gurgaon</div>
-      <div class="role-body">Backend for a nationwide US virtual primary-care practice. Built automated GitHub branch backmerge via Actions + REST API, a generic email open/click tracking system, customised delayed_job for multi-threaded jobs, an affiliate model with event tracking, and pipelines for importing complex enterprise data files.</div>
-    </div>
-
-    <div class="role">
-      <div class="role-top"><div><span class="role-title">Senior Product Engineer</span>, <span class="role-org">AlmaConnect Solutions</span></div><div class="role-when">Dec 2012 &ndash; Oct 2018</div></div>
-      <div class="role-where">Gurgaon</div>
-      <div class="role-body">Built AlmaConnect (alumni networking) and Tradilio (stock-trading social app) on Ruby on Rails, MongoDB, Elasticsearch, AngularJS and React Native. Published the open-source AcDenormalize gem for denormalizing association fields, integrated RazorPay/ATOM payments, did AWS Lambda image processing, and designed real-time chat with Pusher.</div>
-    </div>
-
-    <div class="role">
-      <div class="role-top"><div><span class="role-title">Software Engineer</span>, <span class="role-org">Navyug Infosolutions</span></div><div class="role-when">Oct 2011 &ndash; Dec 2012</div></div>
-      <div class="role-where">Noida</div>
-      <div class="role-body">Built Ruby on Rails + SproutCore web applications and implemented business schemes using a Drools rule engine.</div>
-    </div>
+    <div class="sec-title">Profile Snapshot</div>
+    <p>Software Architect with 14+ years of experience designing and scaling high-performance distributed systems. Proven track record of leading cross-functional teams, modernizing legacy monoliths, and delivering complex, data-intensive applications.</p>
   </div>
 
   <div class="sec">
-    <div class="sec-h">Technical Skills</div>
-    <dl class="skills">
-      <dt>Core</dt><dd>Ruby, Rails, Hotwire / Turbo, ReactJS, React Native, AngularJS, JavaScript, jQuery, HTML5, CSS3</dd>
-      <dt>Data</dt><dd>PostgreSQL, MongoDB, MySQL, Supabase, Elasticsearch, OpenSearch, Redis</dd>
-      <dt>Infra</dt><dd>AWS (Lambda, S3, ECS, CloudFront), Docker, GitHub Actions, CircleCI, Git</dd>
-      <dt>AI</dt><dd>LLM agents, RAG, evaluations, coding-agent workflows</dd>
+    <div class="sec-title">Key Areas of Expertise</div>
+    <ul>
+      <li><strong>Full-Stack Expertise:</strong> Deep specialization in Ruby on Rails, RSpec, Supabase, TypeScript, React, and modern frontend frameworks.</li>
+      <li><strong>Cloud-Native Architecture:</strong> Proficient in architecting scalable solutions on AWS (ECS, Lambda, S3).</li>
+      <li><strong>Leadership &amp; Strategy:</strong> Extensive experience mentoring teams, streamlining CI/CD pipelines, and driving technical modernization.</li>
+      <li><strong>AI Engineering:</strong> Specialized in building agentic systems using OpenAI and Anthropic APIs.</li>
+    </ul>
+  </div>
+
+  <div class="sec">
+    <div class="sec-title">Technical Skills</div>
+    <dl class="skills-grid">
+      <dt>Languages &amp; Frameworks:</dt>
+      <dd>Ruby on Rails, RSpec, Supabase, TypeScript, Node.js, Next.js, JavaScript, React, React Native, AngularJS, HTML5, CSS3, jQuery</dd>
+      <dt>Databases &amp; Search:</dt>
+      <dd>PostgreSQL, MongoDB, MySQL, Elasticsearch, OpenSearch</dd>
+      <dt>Cloud &amp; Infrastructure:</dt>
+      <dd>AWS (ECS, S3, Lambda, CloudFront with custom domain handling), Vercel (Next.js deployment), Docker, Supabase, CircleCI, GitHub Actions (for CI/CD automation), GIT</dd>
+      <dt>Core Competencies:</dt>
+      <dd>Software Architecture, System Design, Data Structures, Google Maps API, AI-Assisted Development (Claude Code, Cursor, Antigravity), OpenAI &amp; Anthropic API</dd>
     </dl>
   </div>
 
   <div class="sec">
-    <div class="sec-h">Education</div>
-    <div class="edu">
-      <div><span class="d">B.Tech, Engineering Physics</span> &middot; <span class="s">Indian Institute of Technology, Guwahati</span></div>
-      <div class="w">2011 &middot; 7.35 CGPA</div>
+    <div class="sec-title">Work Experience</div>
+    
+    <div class="role-entry">
+      <div class="role-head">
+        <span>Independent Software Architect &amp; Consultant | Self-Employed</span>
+        <span>Apr 2024 &ndash; Present</span>
+      </div>
+      <p style="margin-top:2px;">Provided software architecture, system modernization, and quantitative systems engineering for US-based technology clients and proprietary fintech platforms.</p>
+    </div>
+
+    <div class="role-entry">
+      <div class="role-head">
+        <span>Client: QodexAI / Anvitae Inc (US) &mdash; Software Architect (Contract)</span>
+        <span>Dec 2024 &ndash; Jun 2026</span>
+      </div>
+      <ul>
+        <li><strong>AI &amp; Cloud Architecture:</strong> Architected core agentic AI engines leveraging OpenAI and Anthropic APIs; engineered containerized AWS ECS cloud architecture to host backends with high availability.</li>
+        <li><strong>Product Engineering (OutxAI):</strong> Architected OutxAI, an intelligence and scraping tool built with Supabase, TypeScript, PostgreSQL, and React, automated via AWS Amplify.</li>
+        <li><strong>Distributed Scheduling:</strong> Designed scalable scheduling infrastructure supporting multi-scenario build groupings, job queuing, and flexible cron-frequency execution.</li>
+      </ul>
+    </div>
+
+    <div class="role-entry">
+      <div class="role-head">
+        <span>Client: Building Intelligence (US, via Toptal) &mdash; Senior Rails Consultant (Contract)</span>
+        <span>Apr 2024 &ndash; Dec 2025</span>
+      </div>
+      <ul>
+        <li><strong>Core Modernization:</strong> Spearheaded technical modernization and version upgrades for a monolithic enterprise physical-security platform, migrating legacy systems across major Ruby, Rails, and Mongoid (MongoDB) versions.</li>
+        <li><strong>Search Infrastructure:</strong> Modernized search architecture by migrating the platform to OpenSearch, significantly improving query performance and indexing for large-scale security data.</li>
+        <li><strong>Scheduling &amp; Ingestion Pipelines:</strong> Refactored core scheduling engines to eliminate bottlenecks and optimize resource allocation; built high-throughput data-import pipelines for bulk multi-tenant entity ingestion and validation.</li>
+      </ul>
+    </div>
+
+    <div class="role-entry">
+      <div class="role-head">
+        <span>Proprietary Project: AlgoTrading &mdash; Automated Equity Trading Platform</span>
+      </div>
+      <div class="project-url">Live Platform: <a href="https://algo-trading-frontend.algo-trading.workers.dev/">https://algo-trading-frontend.algo-trading.workers.dev/</a></div>
+      <ul>
+        <li><strong>Edge &amp; Serverless Stack:</strong> Architected a single-page trading application using React, TypeScript, and Vite deployed globally on Cloudflare Workers edge, with a decoupled, strongly typed API client layer.</li>
+        <li><strong>Execution Engine &amp; Idempotency:</strong> Engineered a real-time, event-driven quantitative engine using Deno and PostgreSQL pg_cron, leveraging distributed advisory locks to enforce absolute idempotency and eliminate order race conditions.</li>
+        <li><strong>Risk Controls &amp; Sweeps:</strong> Designed quantitative risk mitigation controls including automated End-of-Day order sweeping, exchange tick-size quantization, circuit-band error caching, and global circuit-breaker mechanisms.</li>
+        <li><strong>Cloud Infrastructure &amp; Headless Auth:</strong> Provisioned GCP Compute Engine infrastructure with dedicated static-IP proxies and Playwright headless browser workers for automated multi-factor authentication (TOTP) to broker APIs.</li>
+      </ul>
+    </div>
+
+    <div class="role-entry">
+      <div class="role-head">
+        <span>Lead Software Engineer | W Energy Software</span>
+        <span>Oct 2022 &ndash; Mar 2024</span>
+      </div>
+      <ul>
+        <li>Architected and optimized core financial modules responsible for high-volume automated ledger balancing, invoice reconciliation, and payment matching.</li>
+        <li>Engineered dynamic currency conversion infrastructure, ensuring accurate, multi-tenant global transactions compliant with shifting forex rates.</li>
+        <li>Designed scalable billing algorithms that automated complex payment-to-invoice workflows, eliminating manual auditing errors.</li>
+      </ul>
+    </div>
+
+    <div class="role-entry">
+      <div class="role-head">
+        <span>Senior Backend Engineer | HealthTap</span>
+        <span>Oct 2018 &ndash; Oct 2022</span>
+      </div>
+      <ul>
+        <li>Engineered backend systems using Ruby on Rails to architect heavy data-import systems optimized to parse, validate, and securely process high-volume, complex client medical data files from enterprise partners.</li>
+        <li>Optimized asynchronous background workers by customizing process lifecycle hooks to execute multi-threaded background tasks, maximizing resource utilization.</li>
+        <li>Designed multi-tenant client affiliation engines and complex event-tracking systems to scale affiliate partnership workflows and attribution pipelines.</li>
+        <li>Automated code delivery pipelines by designing custom CI/CD backmerge workflows leveraging automation scripts and platform APIs.</li>
+      </ul>
+    </div>
+
+    <div class="role-entry">
+      <div class="role-head">
+        <span>Sr. Product Engineer | Alma Connect</span>
+        <span>Dec 2012 &ndash; Oct 2018</span>
+      </div>
+      <ul>
+        <li>Designed and open-sourced a reusable database utility gem to handle complex field denormalization across active relational associations, optimizing query performance.</li>
+        <li>Architected multi-tenant marketing campaign infrastructure, engineering modular target audience filters and granular performance reporting modules.</li>
+        <li>Integrated secure transaction and payment processing gateways (ATOM and RazorPay) to manage high-volume event ticketing and donation workflows.</li>
+        <li>Developed and deployed the cross-platform React Native mobile application, maintaining feature parity with the core desktop platform.</li>
+      </ul>
+    </div>
+
+    <div class="role-entry">
+      <div class="role-head">
+        <span>Software Engineer | Navyug Infosolutions Pvt. Ltd.</span>
+        <span>Jun 2011 &ndash; Dec 2012</span>
+      </div>
+      <ul>
+        <li>Developed and maintained dynamic web applications utilizing Ruby on Rails, focusing on clean code practices and efficient feature implementation.</li>
+        <li>Conducted comprehensive server-side data analysis using database query optimization techniques to improve application performance.</li>
+      </ul>
     </div>
   </div>
 
-</body></html>
+  <div class="sec">
+    <div class="sec-title">Education</div>
+    <div class="role-head">
+      <span>Indian Institute of Technology (IIT) Guwahati</span>
+      <span>2011 | GPA: 7.35/10.0</span>
+    </div>
+    <p>Bachelor of Technology in Engineering Physics</p>
+  </div>
+
+</body>
+</html>

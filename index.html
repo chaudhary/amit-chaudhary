@@ -9,10 +9,10 @@ layout: default
       <div class="eyebrow">{{ site.tagline }}</div>
       <h1>{{ site.headline_pre }}<em>{{ site.headline_em }}</em>{{ site.headline_post }}</h1>
       <p class="lede">
-        14+ years shipping production Rails. I work as an <strong>independent contractor</strong>,
-        invoicing US/UK clients directly, with solid US-hours overlap and a long async track record.
-        I specialize in <strong>legacy Rails upgrades, performance &amp; scaling</strong>, and
-        <strong>pragmatic AI-assisted development</strong>.
+        14+ years of experience designing and scaling high-performance distributed systems.
+        I work as an <strong>Independent Software Architect &amp; Consultant</strong> for US technology clients,
+        specializing in <strong>cloud-native AWS architectures</strong>, <strong>core agentic AI systems (OpenAI &amp; Anthropic APIs)</strong>,
+        and <strong>modernizing legacy enterprise monoliths (Ruby on Rails, Mongoid, OpenSearch)</strong>.
       </p>
       <div class="cta-row">
         <a class="btn btn-primary" href="#contact">Work with me</a>
@@ -33,7 +33,7 @@ layout: default
     <div class="about-grid">
       <div class="about">
         <div class="section-tag">About</div>
-        <h2 class="section-title">A senior engineer you bring in when it has to work.</h2>
+        <h2 class="section-title">A software architect you bring in when it has to scale.</h2>
         {% for p in site.data.profile.about %}<p>{{ p }}</p>{% endfor %}
       </div>
       <aside class="facts">
@@ -52,7 +52,7 @@ layout: default
     <div class="section-tag">What I do</div>
     <h2 class="section-title">Where I create the most value</h2>
     <p class="section-intro">
-      Most of my engagements fall into one of these. The kind of work where experience pays for itself quickly.
+      High-impact architectural leadership across distributed systems, agentic AI platforms, and platform modernization.
     </p>
     <div class="grid">
       {% for s in site.data.services %}
@@ -70,7 +70,7 @@ layout: default
   <div class="wrap">
     <div class="section-tag">Stack</div>
     <h2 class="section-title">Tools I reach for</h2>
-    <p class="section-intro">Bias toward simple, proven, boring-in-the-good-way technology. No over-engineering for its own sake.</p>
+    <p class="section-intro">Proven technologies and modern frameworks selected for performance, resilience, and maintainability.</p>
     <div class="stack-cols">
       {% for col in site.data.stack %}
       <div>
@@ -88,8 +88,8 @@ layout: default
 <section id="experience">
   <div class="wrap">
     <div class="section-tag">Experience</div>
-    <h2 class="section-title">Selected work</h2>
-    <p class="section-intro">14+ years across B2B and B2C Rails products. Full detail in the <a href="{{ '/resume.pdf' | relative_url }}" target="_blank" rel="noopener">résumé</a>.</p>
+    <h2 class="section-title">Selected work &amp; engagements</h2>
+    <p class="section-intro">14+ years across distributed systems, agentic AI engines, fintech platforms, and enterprise Rails monoliths. Full detail in the <a href="{{ '/resume.pdf' | relative_url }}" target="_blank" rel="noopener">résumé</a>.</p>
     <div class="timeline">
       {% for r in site.data.experience.roles %}
       <div class="role">
@@ -98,9 +98,22 @@ layout: default
           <div class="when">{{ r.when }}<small>{{ r.where }}</small></div>
         </div>
         <div>
-          <h3>{{ r.role }}</h3>
-          <div class="org">{{ r.org }}</div>
-          <p>{{ r.body }}</p>
+          <div class="role-header">
+            <h3>{{ r.role }}</h3>
+            {% if r.badge %}<span class="role-badge">{{ r.badge }}</span>{% endif %}
+          </div>
+          <div class="org">
+            {{ r.org }}
+            {% if r.url %}<a href="{{ r.url }}" target="_blank" rel="noopener" class="role-link">🔗 {{ r.url_text | default: "Live Platform" }}</a>{% endif %}
+          </div>
+          {% if r.body %}<p class="role-desc">{{ r.body }}</p>{% endif %}
+          {% if r.bullets %}
+          <ul class="role-bullets">
+            {% for b in r.bullets %}
+            <li><strong>{{ b.label }}:</strong> {{ b.text }}</li>
+            {% endfor %}
+          </ul>
+          {% endif %}
         </div>
       </div>
       {% endfor %}
@@ -140,13 +153,13 @@ layout: default
 <section id="contact" style="border-bottom:none;">
   <div class="wrap">
     <div class="contact-card">
-      <h2>Let's talk about your Rails project.</h2>
+      <h2>Let's discuss your architecture or system.</h2>
       <p>
-        Whether it's an upgrade you've been putting off, a performance fire, or a senior pair of hands
-        on a small team, tell me what's going on and I'll tell you straight whether I can help.
+        Whether you are designing a high-performance agentic AI engine, modernizing an enterprise monolith,
+        or need senior technical direction on complex scaling challenges, let's connect.
       </p>
       <div class="contact-links">
-        <a class="btn btn-primary" href="mailto:{{ site.email }}?subject=Rails%20contract%20enquiry">Email me</a>
+        <a class="btn btn-primary" href="mailto:{{ site.email }}?subject=Architecture%20%26%20Consulting%20Enquiry">Email me</a>
         <a class="btn btn-ghost" href="https://www.linkedin.com/in/{{ site.linkedin }}/" target="_blank" rel="noopener">LinkedIn</a>
         <a class="btn btn-ghost" href="https://github.com/{{ site.github }}" target="_blank" rel="noopener">GitHub</a>
         <a class="btn btn-ghost" href="{{ '/resume.pdf' | relative_url }}" target="_blank" rel="noopener">Résumé (PDF)</a>

@@ -1,9 +1,9 @@
 # Tech stack columns
-- group: Core
-  items: [Ruby, Rails, Hotwire / Turbo, ReactJS, React Native, AngularJS, JavaScript]
-- group: Data
-  items: [PostgreSQL, MongoDB, MySQL, Supabase, Elasticsearch, OpenSearch, Redis]
-- group: Infra
-  items: [AWS Lambda, AWS S3, AWS ECS, Docker, GitHub Actions, CircleCI, CloudFront]
-- group: AI
-  items: [LLM agents, RAG, Evals, Coding agents]
+- group: Languages & Frameworks
+  items: [Ruby on Rails, RSpec, TypeScript, React, Next.js, Node.js, Supabase, React Native, AngularJS, JavaScript, HTML5 / CSS3]
+- group: Cloud & Infrastructure
+  items: [AWS (ECS, Lambda, S3, CloudFront), Docker, Cloudflare Workers, Vercel, GCP, GitHub Actions, CircleCI, Git]
+- group: Databases & Search
+  items: [PostgreSQL, MongoDB, Supabase, OpenSearch, Elasticsearch, MySQL, Redis, pg_cron]
+- group: AI & Systems Architecture
+  items: [Agentic AI Systems, OpenAI API, Anthropic API, System Design, Distributed Locks, Claude Code, Cursor, Antigravity, Playwright, Deno]

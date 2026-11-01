@@ -1,6 +1,6 @@
 # amit-chaudhary
 
-Personal site for **Amit Chaudhary**, Senior Ruby on Rails Engineer & Architect, available for independent contract work with US/UK remote teams.
+Personal site for **Amit Chaudhary**, Software Architect | Full-Stack Leader | AI Systems Specialist, available for independent software architecture and consulting engagements with US and global technology teams.
 
 Standard Jekyll site served by GitHub Pages. All content is data-driven: you edit YAML, not HTML.
 

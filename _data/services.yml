@@ -1,19 +1,19 @@
 # "What I do" cards. color: t (teal) | o (orange) | r (red) | g (green)
 - color: t
-  title: Legacy Rails upgrades
-  body: "Moving stuck apps across major Rails and Ruby versions safely, through dependency hell, deprecations, and the test failures nobody wants to own."
+  title: AI & Agentic Systems
+  body: "Architecting core autonomous agentic engines leveraging OpenAI and Anthropic APIs. Designing multi-scenario reasoning workflows, intelligent scraping pipelines, and AI-assisted engineering systems that deliver reliable production results."
 - color: o
-  title: Performance & scaling
-  body: "Finding and killing the N+1s, slow queries, and architectural bottlenecks that show up when traffic grows. PostgreSQL and MongoDB tuning included."
+  title: Cloud-Native Architecture
+  body: "Designing scalable, containerized distributed systems on AWS (ECS, Lambda, S3, CloudFront). Structuring high-availability backends, zero-downtime deployment pipelines, and multi-tenant cloud infrastructure."
 - color: r
-  title: Architecture & technical direction
-  body: "Designing systems that stay simple as they grow. Making the high-stakes calls early so they don't become expensive rewrites later."
+  title: Monolith Modernization & Upgrades
+  body: "Migrating enterprise physical-security and SaaS platforms across major Ruby, Rails, and database versions (Mongoid/MongoDB, OpenSearch). Modernizing mission-critical codebases without regressions."
 - color: g
-  title: Codebase rescue
-  body: "Stepping into inherited, under-tested, or abandoned codebases and making them reliable, shippable, and maintainable again."
+  title: Full-Stack Product Engineering
+  body: "Deep specialization across Ruby on Rails, RSpec, Supabase, TypeScript, and React. Architecting clean APIs, reactive frontends, and cross-platform applications built for speed, maintainability, and scale."
 - color: t
-  title: AI-assisted development
-  body: "Building LLM-backed features the right way (retrieval-grounded, evaluated, shipped), plus helping teams use coding agents without shooting themselves in the foot."
+  title: Distributed Scheduling & Ingestion
+  body: "Engineering high-throughput data-import pipelines for bulk multi-tenant entity ingestion, alongside scalable scheduling engines with job queuing, multi-scenario build groupings, and flexible cron execution."
 - color: o
-  title: Fractional senior & mentoring
-  body: "Being the senior voice on a small team. Reviewing, unblocking, mentoring, and raising the bar without the gatekeeping."
+  title: Quantitative & Fintech Systems
+  body: "Building real-time, event-driven trading platforms and financial ledger engines. Implementing distributed advisory locks for absolute idempotency, dynamic forex currency conversion, and automated ledger balancing."

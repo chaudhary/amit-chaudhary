@@ -2,11 +2,9 @@
 # Site settings  (edit these; the whole site reads from here + _data/*.yml)
 # ---------------------------------------------------------------------------
 title:    Amit Chaudhary
-tagline:  Senior Ruby on Rails Engineer & Architect
+tagline:  Software Architect · Full-Stack Leader · AI Systems Specialist
 description: >-
-  Senior Ruby on Rails engineer and architect with 14+ years of experience.
-  Available for independent contract work with US and UK remote teams.
-  Legacy Rails upgrades, scaling, performance, and pragmatic AI-assisted development.
+  Software Architect with 14+ years of experience designing and scaling high-performance distributed systems. Proven track record of leading cross-functional teams, modernizing legacy monoliths, and delivering complex, data-intensive applications. Available for independent software architecture and consulting engagements.
 
 # Contact / profiles
 email:    chaudharyamitiit2007@gmail.com
@@ -16,10 +14,10 @@ linkedin: amit-chaudhary-iitg
 location: India (remote)
 
 # Hero
-headline_pre:  "I build, scale and "
-headline_em:   "rescue"
-headline_post: " Ruby on Rails apps for US & UK teams."
-availability:  "Open to high-rate contract engagements"
+headline_pre:  "I architect, scale and "
+headline_em:   "modernize"
+headline_post: " distributed systems & AI platforms."
+availability:  "Available for Architecture & Consulting Engagements"
 show_toptal_badge: true    # flip to true to show the Toptal "Top 3%" badge in the hero
 
 # Deployment (project page lives under /amit-chaudhary)
