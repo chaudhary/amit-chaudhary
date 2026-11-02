@@ -1,16 +1,16 @@
 # About paragraphs and the "at a glance" facts box
 about:
-  - "Software Architect with 14+ years of experience designing, architecting, and scaling high-performance distributed systems. Proven track record of leading cross-functional engineering teams, modernizing legacy enterprise monoliths, and delivering complex, data-intensive applications for US technology companies."
-  - "Deep specialization across <strong>full-stack engineering (Ruby on Rails, RSpec, Supabase, TypeScript, React)</strong> and <strong>cloud-native architecture on AWS (ECS, Lambda, S3, CloudFront)</strong>. Equally comfortable owning high-stakes technical architecture decisions and executing hands-on migrations across complex, multi-tenant production systems."
-  - "Specialized in <strong>AI Engineering &amp; Agentic Systems</strong>: architecting core autonomous agentic engines leveraging OpenAI and Anthropic APIs, designing distributed scheduling workflows, and engineering quantitative fintech trading systems with absolute idempotency and risk mitigation."
+  - "I work as an <strong>Independent Software Architect &amp; Freelance Contractor</strong>, partnering with US technology companies to solve high-stakes architectural, scaling, and platform modernization challenges without the overhead of full-time hiring."
+  - "Over the past several years, I have operated purely on contract for US clients, including major freelance engagements at <strong>QodexAI / Anvitae Inc</strong> (architecting core agentic AI engines on AWS ECS and product engineering for OutxAI) and <strong>Building Intelligence</strong> via Toptal (spearheading full-stack modernization across Ruby on Rails, MongoDB/Mongoid, and OpenSearch)."
+  - "With 14+ years across <strong>Ruby on Rails, Supabase, TypeScript, React, AWS, and Agentic AI (OpenAI &amp; Anthropic APIs)</strong>, I step directly into mission-critical codebases, establish robust system architecture, and deliver high-velocity results with deep US-hours overlap."
 
 facts:
+  - { k: "Status",        v: "Freelance / Independent Contractor" }
   - { k: "Experience",    v: "14+ years" }
-  - { k: "Current Role",  v: "Software Architect & Consultant" }
-  - { k: "Core Focus",    v: "Distributed Systems & AI" }
+  - { k: "Recent Clients", v: "QodexAI · Building Intelligence (Toptal)" }
+  - { k: "Core Focus",    v: "Software Architecture & AI Systems" }
   - { k: "Full-Stack",    v: "Rails · TypeScript · React · Supabase" }
   - { k: "Cloud & Infra", v: "AWS (ECS, Lambda, S3) · Docker" }
-  - { k: "Engagement",    v: "Independent Consultant (W-8BEN)" }
-  - { k: "Clients",       v: "US Technology & Fintech Teams" }
+  - { k: "Contract Terms", v: "Direct W-8BEN (USD) · Valid GST" }
   - { k: "Availability",  v: "US Business Hours Overlap" }
   - { k: "Education",     v: "B.Tech, IIT Guwahati (GPA 7.35)" }

@@ -1,14 +1,15 @@
 # Work history (most recent first)
 roles:
-- role: Software Architect (Contract)
-  org: QodexAI / Anvitae Inc (US)
-  badge: Contract
+- role: "Freelance Software Architect (Contract)"
+  org: "Client: QodexAI / Anvitae Inc (US)"
+  badge: "Freelance Contract"
   when: Dec 2024 – Jun 2026
-  where: Remote · Contract
+  where: Remote · Freelance Contract
   logo: qodex.png
   body: >-
-    Architected core agentic AI engines, led product engineering for OutxAI, and engineered
-    containerized cloud infrastructure on AWS for US-based clients.
+    Hired as an independent freelance Software Architect for US technology client Anvitae Inc / QodexAI.
+    Architected core agentic AI engines, led product engineering for OutxAI, and engineered containerized AWS ECS
+    cloud infrastructure with high availability.
   bullets:
     - label: AI & Cloud Architecture
       text: Architected core agentic AI engines leveraging OpenAI and Anthropic APIs; engineered containerized AWS ECS cloud architecture to host backends with high availability.
@@ -17,15 +18,15 @@ roles:
     - label: Distributed Scheduling
       text: Designed scalable scheduling infrastructure supporting multi-scenario build groupings, job queuing, and flexible cron-frequency execution.
 
-- role: Senior Rails Consultant (Contract)
-  org: Building Intelligence (US, via Toptal)
-  badge: Contract via Toptal
+- role: "Freelance Senior Rails Consultant (Contract)"
+  org: "Client: Building Intelligence (US, via Toptal)"
+  badge: "Freelance via Toptal"
   when: Apr 2024 – Dec 2025
   where: Remote · Contract via Toptal
   logo: buildingintelligence.png
   body: >-
-    Via Toptal, spearheaded technical modernization and version upgrades for a monolithic enterprise
-    physical-security platform for visitor, vehicle, and vendor management.
+    Engaged through Toptal as a specialized freelance Rails consultant on Building Intelligence's enterprise
+    physical-security platform. Spearheaded full-stack platform modernization, major version upgrades, and OpenSearch migration.
   bullets:
     - label: Core Modernization
       text: Spearheaded technical modernization and version upgrades for a monolithic enterprise physical-security platform, migrating legacy systems across major Ruby, Rails, and Mongoid (MongoDB) versions.
